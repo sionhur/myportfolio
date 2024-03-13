@@ -484,10 +484,18 @@ button {
 }
 
 .aboutp {
+  text-align: left;
   width: 45%;
   height: 50%;
   margin-top: 51px;
   margin-left: 649px;
+}
+
+.aboutp2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  overflow: hidden;
 }
 
 .contacts {

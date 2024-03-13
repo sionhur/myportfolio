@@ -190,6 +190,14 @@ button {
   margin-top: 51px;
   width: 45%;
   height: 50%;
+  text-align: left;
+}
+
+.aboutp2 {
+  white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+max-width: 200px;
 }
 
 .contacts {
