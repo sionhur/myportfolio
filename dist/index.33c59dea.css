@@ -464,6 +464,7 @@ button {
 
 .mainlogo {
   height: 10vw;
+  transform: translateY(30%);
 }
 
 .design {
@@ -599,6 +600,27 @@ button {
 .images {
   max-width: 65%;
   margin: 150px auto 50px;
+}
+
+.row {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 0 4px;
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 8px;
 }
 
 .dots {
@@ -982,5 +1004,14 @@ body, html {
 .scroll-container {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.projectpage {
+  height: 90vh;
+}
+
+.projectimage {
+  height: 50vh;
+  transform: translateY(20%);
 }
 /*# sourceMappingURL=index.33c59dea.css.map */

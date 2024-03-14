@@ -211,6 +211,7 @@ button {
 
 .mainlogo {
   height: 10vw;
+  transform: translateY(30%); 
 }
 
 .design {
@@ -373,7 +374,7 @@ button {
   margin-bottom: 50px;
 }
 
-/* .row {
+.row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -381,7 +382,6 @@ button {
   margin-top: 150px;
   margin-bottom: 50px;
 }
-
 
 .column {
   flex: 25%;
@@ -393,7 +393,7 @@ button {
   margin-top: 8px;
   width: 100%;
   vertical-align: middle;
-} */
+}
 
 .dots {
   position: fixed;
@@ -796,4 +796,13 @@ body, html {
 .scroll-container {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.projectpage {
+  height: 90vh;
+}
+
+.projectimage {
+  height: 50vh;
+  transform: translateY(20%);
 }
