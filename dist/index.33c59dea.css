@@ -243,40 +243,6 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (width >= 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (width >= 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (width >= 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (width >= 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (width >= 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
@@ -292,12 +258,6 @@ img, video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter, backdrop-filter;
-  transition-duration: .15s;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
 @font-face {
@@ -414,22 +374,162 @@ button {
 }
 
 .navigation {
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 10vw;
   font-family: Poppins SemiBold;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   line-height: normal;
-  text-decoration-line: underline;
+  display: flex;
+}
+
+.navlink {
+  padding: 5px;
+}
+
+.line1 {
+  height: 10vw;
+  transform: translateY(50%);
+}
+
+.line2 {
+  height: 10vw;
+  transform: translateY(47%);
 }
 
 .about {
   text-align: left;
-  margin-top: -40px;
-  margin-left: 92px;
+  height: 10vw;
   font-family: Poppins Light, sans-serif;
+  transform: translateY(40%);
 }
 
-.about:hover {
+.about .img2 {
+  align-self: center;
+  display: none;
+}
+
+.about:hover .img2 {
+  text-align: center;
   text-shadow: 0 0 10px #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.about .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.about:hover .img1 {
+  display: none;
+}
+
+.art {
+  text-align: left;
+  height: 10vw;
+  font-family: Poppins Light, sans-serif;
+  transform: translateY(30%);
+}
+
+.art .img2 {
+  align-self: center;
+  height: 10vw;
+  display: none;
+  transform: translateY(10%);
+}
+
+.art:hover .img2 {
+  text-align: center;
+  text-shadow: 0 0 10px #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.art .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.art:hover .img1 {
+  display: none;
+}
+
+.mainlogo {
+  height: 10vw;
+}
+
+.design {
+  text-align: left;
+  height: 10vw;
+  font-family: Poppins Light, sans-serif;
+  transform: translateY(30%);
+}
+
+.design .img2 {
+  align-self: center;
+  height: 10vw;
+  display: none;
+  transform: translateY(10%);
+}
+
+.design:hover .img2 {
+  text-align: center;
+  text-shadow: 0 0 10px #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.design .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.design:hover .img1 {
+  display: none;
+}
+
+.contact {
+  text-align: left;
+  height: 10vw;
+  font-family: Poppins Light, sans-serif;
+  transform: translateY(30%);
+}
+
+.contact .img2 {
+  align-self: center;
+  height: 10vw;
+  display: none;
+  transform: translateY(10%);
+}
+
+.contact:hover .img2 {
+  text-align: center;
+  text-shadow: 0 0 10px #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.contact .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.contact:hover .img1 {
+  display: none;
 }
 
 .onabout {
@@ -438,17 +538,6 @@ button {
   margin-top: -40px;
   margin-left: 92px;
   font-family: Poppins SemiBold, sans-serif;
-}
-
-.contact {
-  text-align: right;
-  margin-top: -40px;
-  margin-right: 92px;
-  font-family: Poppins Light, sans-serif;
-}
-
-.contact:hover {
-  text-shadow: 0 0 10px #f5f5f5;
 }
 
 .oncontact {
@@ -461,11 +550,9 @@ button {
 
 .aboutimage {
   object-fit: cover;
+  aspect-ratio: 1;
   border-radius: 50%;
-  width: 346px;
-  height: 346px;
-  margin-top: 200px;
-  margin-left: 168px;
+  width: 20vw;
   box-shadow: 0 0 20px #f5f5f5;
 }
 
@@ -473,29 +560,18 @@ button {
   box-shadow: 0 0 35px #f5f5f5;
 }
 
-.abouth2 {
-  margin-top: -350px;
-  margin-left: 649px;
-}
-
 .abouth3 {
-  margin-top: 26px;
-  margin-left: 649px;
+  padding-top: 26px;
 }
 
 .aboutp {
-  text-align: left;
-  width: 45%;
-  height: 50%;
-  margin-top: 51px;
-  margin-left: 649px;
+  padding-top: 40px;
 }
 
-.aboutp2 {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 200px;
-  overflow: hidden;
+.aboutTextContainer {
+  text-align: left;
+  width: 40vw;
+  padding-left: 6vw;
 }
 
 .contacts {
@@ -525,27 +601,6 @@ button {
   margin: 150px auto 50px;
 }
 
-.row {
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 150px;
-  margin-bottom: 50px;
-  padding: 0 4px;
-  display: flex;
-}
-
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  vertical-align: middle;
-  width: 100%;
-  margin-top: 8px;
-}
-
 .dots {
   position: fixed;
   bottom: 5%;
@@ -553,10 +608,22 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.parent {
+  grid-column-gap: 30px;
+  grid-row-gap: 55px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  width: 55%;
+  height: 80%;
+  margin: auto;
+  display: grid;
+}
+
 .div1 {
   grid-area: 1 / 1 / 2 / 2;
   justify-content: center;
   align-self: center;
+  height: 100%;
   display: flex;
 }
 
@@ -564,7 +631,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div1:hover .img2 {
@@ -581,7 +647,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div1:hover .img1 {
@@ -592,6 +657,7 @@ button {
   grid-area: 1 / 2 / 2 / 3;
   justify-content: center;
   align-self: center;
+  height: 100%;
   display: flex;
 }
 
@@ -600,7 +666,6 @@ button {
   align-self: center;
   padding: 40px;
   display: none;
-  position: absolute;
 }
 
 .div2:hover .img2 {
@@ -617,7 +682,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div2:hover .img1 {
@@ -628,6 +692,7 @@ button {
   grid-area: 1 / 3 / 2 / 4;
   justify-content: center;
   align-self: center;
+  height: 100%;
   display: flex;
 }
 
@@ -635,7 +700,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div3:hover .img2 {
@@ -652,7 +716,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div3:hover .img1 {
@@ -663,6 +726,7 @@ button {
   grid-area: 2 / 1 / 3 / 2;
   justify-content: center;
   align-self: center;
+  height: 100%;
   display: flex;
 }
 
@@ -670,7 +734,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div4:hover .img2 {
@@ -687,7 +750,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div4:hover .img1 {
@@ -705,7 +767,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div5:hover .img2 {
@@ -722,7 +783,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div5:hover .img1 {
@@ -740,7 +800,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div6:hover .img2 {
@@ -757,7 +816,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div6:hover .img1 {
@@ -775,7 +833,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div7:hover .img2 {
@@ -792,7 +849,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div7:hover .img1 {
@@ -810,7 +866,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div8:hover .img2 {
@@ -827,7 +882,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div8:hover .img1 {
@@ -845,7 +899,6 @@ button {
   z-index: 99;
   align-self: center;
   display: none;
-  position: absolute;
 }
 
 .div9:hover .img2 {
@@ -862,7 +915,6 @@ button {
   z-index: 99;
   align-self: center;
   display: inline;
-  position: absolute;
 }
 
 .div9:hover .img1 {
@@ -873,44 +925,62 @@ button {
   justify-content: center;
   width: 100vw;
   height: 80vh;
+  margin-top: 20px;
   display: flex;
 }
 
-.container {
-  white-space: nowrap;
-  box-sizing: border-box;
-  background-color: #1a1a1a;
+body, html {
   width: 100%;
-  padding: 20px 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+  display: flex;
   overflow-x: auto;
 }
 
 .scroll-item {
-  width: 100vw;
-  height: 150px;
-  margin: 0 20px;
-  display: inline-block;
-}
-
-.parent {
-  grid-column-gap: 30px;
-  grid-row-gap: 55px;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  width: 55%;
-  height: 70%;
-  margin: auto;
-  display: grid;
-}
-
-.aboutsection {
-  width: 55vw;
-  height: 50%;
+  text-align: center;
+  flex: 0 0 100vw;
+  height: 70vh;
 }
 
 .scroll-buttons {
   justify-content: space-between;
-  margin-bottom: 10px;
+  width: 100vw;
   display: flex;
+  position: absolute;
+  top: 50%;
+}
+
+#scrollLeft {
+  background-color: #0000;
+  margin-left: 50px;
+}
+
+#scrollRight {
+  background-color: #0000;
+  margin-right: 50px;
+}
+
+.aboutstuff {
+  flex-direction: row;
+  align-items: center;
+  width: 60vw;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 /*# sourceMappingURL=index.33c59dea.css.map */
