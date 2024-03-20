@@ -243,17 +243,8 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter {
@@ -686,7 +677,6 @@ button {
 .div2 .img2 {
   z-index: 99;
   align-self: center;
-  padding: 40px;
   display: none;
 }
 
@@ -947,7 +937,6 @@ button {
   justify-content: center;
   width: 100vw;
   height: 80vh;
-  margin-top: 20px;
   display: flex;
 }
 

@@ -460,7 +460,7 @@ button {
     /* position: absolute; */
     align-self: center;
     z-index: 99;
-    padding: 40px
+    /* padding: 40px */
   }
   .div2:hover .img2 {
     display: flex;
@@ -702,7 +702,7 @@ button {
     justify-content: center;
     height: 80vh;
     width: 100vw;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   /* * { margin: 0 }
