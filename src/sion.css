@@ -120,8 +120,18 @@ button {
   font-style: normal;
   font-family: Poppins SemiBold;
   line-height: normal;
-  /* text-decoration-line: underline; */
   height: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.mobilenav {
+  font-size: 12px;
+  font-style: normal;
+  font-family: Poppins SemiBold;
+  line-height: normal;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -132,32 +142,40 @@ button {
 }
 
 .line1 {
-  height: 10vw;
-  transform: translateY(50%); 
+  height: 15vh;
+  transform: translateY(53%); 
 }
 
 .line2 {
-  height: 10vw;
-  transform: translateY(47%); 
+  height: 15vh;
+  transform: translateY(48%); 
+}
+
+.line3 {
+  height: 10vh;
+  transform: translateY(65%); 
+}
+
+.line1-2 {
+  height: 8vh;
+  transform: translateY(45%); 
+}
+
+.line2-2 {
+  height: 8vh;
+  transform: translateY(40%); 
 }
 
 .about {
   font-family: 'Poppins Light', sans-serif;
   text-align: left;
-  /* margin-left: 92px;
-  margin-top: -40px; */
-  height: 10vw;
-  transform: translateY(40%); 
+  height: 15vh;
+  transform: translateY(35%); 
 }
-
-/* .about:hover {
-  text-shadow: 0 0 10px rgba(245,245,245, 1);
-} */
 
 .about .img2 {
   display: none;
   align-self: center;
-  /* z-index: 99; */
 }
 .about:hover .img2 {
   display: inline-block;
@@ -167,11 +185,11 @@ button {
   font-size: 20px;
   text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
+  transform: translateY(40%);
 }
 .about .img1 {
   display: inline;
   align-self: center;
-  /* z-index: -1; */
 }
 .about:hover .img1 {
   display: none;
@@ -180,15 +198,13 @@ button {
 .art {
   font-family: 'Poppins Light', sans-serif;
   text-align: left;
-  height: 10vw;
+  height: 15vh;
   transform: translateY(30%); 
 }
-
 .art .img2 {
   display: none;
   align-self: center;
-  /* z-index: 99; */
-  height: 10vw;
+  height: 15vh;
   transform: translateY(10%); 
 }
 .art:hover .img2 {
@@ -210,23 +226,22 @@ button {
 }
 
 .mainlogo {
-  height: 10vw;
-  transform: translateY(30%); 
+  height: 15vh;
+  transform: translateY(32%); 
 }
 
 .design {
   font-family: 'Poppins Light', sans-serif;
   text-align: left;
-  height: 10vw;
+  height: 15vh;
   transform: translateY(30%); 
 }
-
 .design .img2 {
   display: none;
   align-self: center;
   /* z-index: 99; */
-  height: 10vw;
-  transform: translateY(10%); 
+  height: 15vh;
+  transform: translateY(20%); 
 }
 .design:hover .img2 {
   display: inline-block;
@@ -249,15 +264,14 @@ button {
 .contact {
   font-family: 'Poppins Light', sans-serif;
   text-align: left;
-  height: 10vw;
+  height: 15vh;
   transform: translateY(30%); 
 }
-
 .contact .img2 {
   display: none;
   align-self: center;
   /* z-index: 99; */
-  height: 10vw;
+  height: 15vh;
   transform: translateY(10%); 
 }
 .contact:hover .img2 {
@@ -278,31 +292,124 @@ button {
   display: none;
 }
 
-.onabout{
-  font-family: 'Poppins SemiBold', sans-serif;
-  text-align: left;
-  margin-left: 92px;
-  margin-top: -40px;
-  text-shadow: 0 0 10px rgba(245,245,245, 1);
-}
-
-/* .contact {
+.about2 {
   font-family: 'Poppins Light', sans-serif;
-  text-align: right;
-  margin-right: 92px;
-  margin-top: -40px;
+  text-align: left;
+  height: 8vh;
+  transform: translateY(30%); 
+}
+.about2 .img2 {
+  display: none;
+  align-self: center;
+}
+.about2:hover .img2 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(245,245,245, 1);
+  transform: translateY(30%);
+}
+.about2 .img1 {
+  display: inline;
+  align-self: center;
+}
+.about2:hover .img1 {
+  display: none;
 }
 
-.contact:hover {
+.art2 {
+  font-family: 'Poppins Light', sans-serif;
+  text-align: left;
+  height: 8vh;
+  transform: translateY(25%); 
+}
+.art2 .img2 {
+  display: none;
+  align-self: center;
+  height: 10vh;
+  transform: translateY(5%); 
+}
+.art2:hover .img2 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 12px;
+  text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
-} */
+}
+.art2 .img1 {
+  display: inline;
+  align-self: center;
+  /* z-index: -1; */
+}
+.art2:hover .img1 {
+  display: none;
+}
 
-.oncontact{
-  font-family: 'Poppins SemiBold', sans-serif;
-  text-align: right;
-  margin-right: 92px;
-  margin-top: -40px;
+.design2 {
+  font-family: 'Poppins Light', sans-serif;
+  text-align: left;
+  height: 8vh;
+  transform: translateY(25%); 
+}
+.design2 .img2 {
+  display: none;
+  align-self: center;
+  /* z-index: 99; */
+  height: 8vh;
+  transform: translateY(10%); 
+}
+.design2:hover .img2 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 12px;
+  text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
+}
+.design2 .img1 {
+  display: inline;
+  align-self: center;
+  /* z-index: -1; */
+}
+.design2:hover .img1 {
+  display: none;
+}
+
+.contact2 {
+  font-family: 'Poppins Light', sans-serif;
+  text-align: left;
+  height: 8vh;
+  transform: translateY(25%); 
+}
+.contact2 .img2 {
+  display: none;
+  align-self: center;
+  /* z-index: 99; */
+  height: 8vh;
+  transform: translateY(10%); 
+}
+.contact2:hover .img2 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(245,245,245, 1);
+}
+.contact2 .img1 {
+  display: inline;
+  align-self: center;
+  /* z-index: -1; */
+}
+.contact2:hover .img1 {
+  display: none;
 }
 
 .aboutimage {
@@ -321,21 +428,11 @@ button {
   box-shadow: 0 0 35px #f5f5f5;
 }
 
-.abouth2 {
-  /* margin-left: 649px; */
-  /* margin-top: -350px; */
-}
-
 .abouth3 {
-  /* margin-left: 649px; */
-  /* margin-top: 26px; */
   padding-top: 26px;
 }
 
 .aboutp {
-  /* margin-left: 649px; */
-  /* margin-top: 51px; */
-  /* width: 45%; */
   padding-top: 40px;
 }
 
@@ -348,18 +445,6 @@ button {
 .contacts {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-}
-
-.rightarrow {
-  position: absolute;
-  top: 457px;
-  right: 92px;
-}
-
-.leftarrow {
-  position: absolute;
-  top: 457px;
-  left: 92px;
 }
 
 .imagecenter {
@@ -743,6 +828,7 @@ body, html {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth; /* Enables smooth scrolling */
+  height: 100vh;
 }
 
 .scroll-item {
@@ -805,4 +891,62 @@ body, html {
 .projectimage {
   height: 50vh;
   transform: translateY(20%);
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  
+  .scroll-buttons {
+    display: none;
+  }
+
+  .scroll-item {
+    flex: 0 0 100vw; /* Each item takes full viewport width */
+    text-align: center; /* Center the content */
+    /* Add more styling here */
+    /* padding: 10vw 10vh; */
+  }
+
+  .aboutstuff {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    margin: auto;
+  
+  }
+
+  .aboutTextContainer {
+    width: 80vw;
+    padding-left: 6vw;
+    text-align: left;
+    padding-bottom: 5vh;
+  }
+
+  .aboutimage {
+    width: 60vw;
+    aspect-ratio: 1 / 1;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .scroll-container {
+    height: 80vh;
+  }
 }

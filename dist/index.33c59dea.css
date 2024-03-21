@@ -247,10 +247,6 @@ img, video {
   position: relative;
 }
 
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 @font-face {
   font-family: Poppins SemiBold;
   src: url("Poppins-SemiBold.9e75d967.ttf") format("truetype");
@@ -375,25 +371,51 @@ button {
   display: flex;
 }
 
+.mobilenav {
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 8vh;
+  font-family: Poppins SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+}
+
 .navlink {
   padding: 5px;
 }
 
 .line1 {
-  height: 10vw;
-  transform: translateY(50%);
+  height: 15vh;
+  transform: translateY(53%);
 }
 
 .line2 {
-  height: 10vw;
-  transform: translateY(47%);
+  height: 15vh;
+  transform: translateY(48%);
+}
+
+.line3 {
+  height: 10vh;
+  transform: translateY(65%);
+}
+
+.line1-2 {
+  height: 8vh;
+  transform: translateY(45%);
+}
+
+.line2-2 {
+  height: 8vh;
+  transform: translateY(40%);
 }
 
 .about {
   text-align: left;
-  height: 10vw;
+  height: 15vh;
   font-family: Poppins Light, sans-serif;
-  transform: translateY(40%);
+  transform: translateY(35%);
 }
 
 .about .img2 {
@@ -409,6 +431,7 @@ button {
   font-family: Poppins Medium, sans-serif;
   font-size: 20px;
   display: inline-block;
+  transform: translateY(40%);
 }
 
 .about .img1 {
@@ -422,14 +445,14 @@ button {
 
 .art {
   text-align: left;
-  height: 10vw;
+  height: 15vh;
   font-family: Poppins Light, sans-serif;
   transform: translateY(30%);
 }
 
 .art .img2 {
   align-self: center;
-  height: 10vw;
+  height: 15vh;
   display: none;
   transform: translateY(10%);
 }
@@ -454,22 +477,22 @@ button {
 }
 
 .mainlogo {
-  height: 10vw;
-  transform: translateY(30%);
+  height: 15vh;
+  transform: translateY(32%);
 }
 
 .design {
   text-align: left;
-  height: 10vw;
+  height: 15vh;
   font-family: Poppins Light, sans-serif;
   transform: translateY(30%);
 }
 
 .design .img2 {
   align-self: center;
-  height: 10vw;
+  height: 15vh;
   display: none;
-  transform: translateY(10%);
+  transform: translateY(20%);
 }
 
 .design:hover .img2 {
@@ -493,14 +516,14 @@ button {
 
 .contact {
   text-align: left;
-  height: 10vw;
+  height: 15vh;
   font-family: Poppins Light, sans-serif;
   transform: translateY(30%);
 }
 
 .contact .img2 {
   align-self: center;
-  height: 10vw;
+  height: 15vh;
   display: none;
   transform: translateY(10%);
 }
@@ -524,20 +547,135 @@ button {
   display: none;
 }
 
-.onabout {
+.about2 {
   text-align: left;
-  text-shadow: 0 0 10px #f5f5f5;
-  margin-top: -40px;
-  margin-left: 92px;
-  font-family: Poppins SemiBold, sans-serif;
+  height: 8vh;
+  font-family: Poppins Light, sans-serif;
+  transform: translateY(30%);
 }
 
-.oncontact {
-  text-align: right;
+.about2 .img2 {
+  align-self: center;
+  display: none;
+}
+
+.about2:hover .img2 {
+  text-align: center;
   text-shadow: 0 0 10px #f5f5f5;
-  margin-top: -40px;
-  margin-right: 92px;
-  font-family: Poppins SemiBold, sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  transform: translateY(30%);
+}
+
+.about2 .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.about2:hover .img1 {
+  display: none;
+}
+
+.art2 {
+  text-align: left;
+  height: 8vh;
+  font-family: Poppins Light, sans-serif;
+  transform: translateY(25%);
+}
+
+.art2 .img2 {
+  align-self: center;
+  height: 10vh;
+  display: none;
+  transform: translateY(5%);
+}
+
+.art2:hover .img2 {
+  text-align: center;
+  text-shadow: 0 0 10px #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.art2 .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.art2:hover .img1 {
+  display: none;
+}
+
+.design2 {
+  text-align: left;
+  height: 8vh;
+  font-family: Poppins Light, sans-serif;
+  transform: translateY(25%);
+}
+
+.design2 .img2 {
+  align-self: center;
+  height: 8vh;
+  display: none;
+  transform: translateY(10%);
+}
+
+.design2:hover .img2 {
+  text-align: center;
+  text-shadow: 0 0 10px #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.design2 .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.design2:hover .img1 {
+  display: none;
+}
+
+.contact2 {
+  text-align: left;
+  height: 8vh;
+  font-family: Poppins Light, sans-serif;
+  transform: translateY(25%);
+}
+
+.contact2 .img2 {
+  align-self: center;
+  height: 8vh;
+  display: none;
+  transform: translateY(10%);
+}
+
+.contact2:hover .img2 {
+  text-align: center;
+  text-shadow: 0 0 10px #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins Medium, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.contact2 .img1 {
+  align-self: center;
+  display: inline;
+}
+
+.contact2:hover .img1 {
+  display: none;
 }
 
 .aboutimage {
@@ -569,18 +707,6 @@ button {
 .contacts {
   font-family: Poppins, sans-serif;
   font-size: 20px;
-}
-
-.rightarrow {
-  position: absolute;
-  top: 457px;
-  right: 92px;
-}
-
-.leftarrow {
-  position: absolute;
-  top: 457px;
-  left: 92px;
 }
 
 .imagecenter {
@@ -949,6 +1075,7 @@ body, html {
 
 .scroll-container {
   scroll-behavior: smooth;
+  height: 100vh;
   display: flex;
   overflow-x: auto;
 }
@@ -1002,5 +1129,61 @@ body, html {
 .projectimage {
   height: 50vh;
   transform: translateY(20%);
+}
+
+@media only screen and (width <= 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .scroll-buttons {
+    display: none;
+  }
+
+  .scroll-item {
+    text-align: center;
+    flex: 0 0 100vw;
+  }
+
+  .aboutstuff {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+  .aboutTextContainer {
+    text-align: left;
+    width: 80vw;
+    padding-bottom: 5vh;
+    padding-left: 6vw;
+  }
+
+  .aboutimage {
+    aspect-ratio: 1;
+    width: 60vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media only screen and (width >= 600px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .scroll-container {
+    height: 80vh;
+  }
 }
 /*# sourceMappingURL=index.33c59dea.css.map */
