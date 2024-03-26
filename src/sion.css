@@ -129,9 +129,9 @@ button {
 .navigation {
   font-size: 20px;
   font-style: normal;
-  font-family: Poppins SemiBold;
+  font-family: 'Poppins Medium', sans-serif;
   line-height: normal;
-  height: 10vw;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -140,7 +140,8 @@ button {
 .mobilenav {
   font-size: 12px;
   font-style: normal;
-  font-family: Poppins SemiBold;
+  font-family: 'Poppins Medium', sans-serif;
+  text-align: center;
   line-height: normal;
   height: 8vh;
   display: flex;
@@ -157,8 +158,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* align-self: center;
-  transform: translateY(50%);  */
+  /* align-self: center; */
 }
 
 .line2 {
@@ -166,7 +166,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(50%);  */
 }
 
 .line3 {
@@ -175,7 +174,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(65%);  */
 }
 
 .line1-2 {
@@ -183,7 +181,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(45%);  */
 }
 
 .line2-2 {
@@ -191,31 +188,29 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(41%);  */
 }
 
 .about {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
+  /* font-family: 'Poppins Medium', sans-serif;
+  font-size: 20px; */
+  /* text-align: left; */
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(30%);  */
 }
 
 .about .img2 {
   display: none;
   align-self: center;
-  /* transform: translateY(30%); */
 }
 .about:hover .img2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 20px;
-  text-align: center;
+  /* font-family: 'Poppins Medium', sans-serif;
+  font-size: 20px; */
+  /* text-align: center; */
   text-shadow: 0 0 10px rgba(245,245,245, 1);
 }
 .about .img1 {
@@ -227,27 +222,20 @@ button {
 }
 
 .art {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(20%);  */
 }
 .art .img2 {
   display: none;
   align-self: center;
   height: 15vh;
-  /* transform: translateY(20%);  */
 }
 .art:hover .img2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 20px;
-  text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
 }
 .art .img1 {
@@ -264,32 +252,24 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(32%);  */
 }
 
 .design {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(20%);  */
 }
 .design .img2 {
   display: none;
   align-self: center;
   /* z-index: 99; */
   height: 15vh;
-  /* transform: translateY(20%);  */
 }
 .design:hover .img2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 20px;
-  text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
 }
 .design .img1 {
@@ -302,28 +282,21 @@ button {
 }
 
 .contact {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(20%);  */
 }
 .contact .img2 {
   display: none;
   align-self: center;
   /* z-index: 99; */
   height: 15vh;
-  /* transform: translateY(20%);  */
 }
 .contact:hover .img2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 20px;
-  text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
 }
 .contact .img1 {
@@ -343,13 +316,10 @@ button {
 }
 
 .about2 {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(30%);  */
 }
 .about2 .img2 {
   display: none;
@@ -359,11 +329,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 12px;
-  text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
-  /* transform: translateY(10%); */
 }
 .about2 .img1 {
   display: inline;
@@ -374,27 +340,20 @@ button {
 }
 
 .art2 {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(25%);  */
 }
 .art2 .img2 {
   display: none;
   align-self: center;
   height: 10vh;
-  /* transform: translateY(5%);  */
 }
 .art2:hover .img2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 12px;
-  text-align: center;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
 }
 .art2 .img1 {
@@ -407,28 +366,21 @@ button {
 }
 
 .design2 {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(24%);  */
 }
 .design2 .img2 {
   display: none;
   align-self: center;
   /* z-index: 99; */
   height: 8vh;
-  /* transform: translateY(8%);  */
 }
 .design2:hover .img2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 12px;
-  /* text-align: center; */
     /* padding-right: 10px; */
   text-shadow: 0 0 10px rgba(245,245,245, 1);
 }
@@ -442,28 +394,21 @@ button {
 }
 
 .contact2 {
-  font-family: 'Poppins Light', sans-serif;
-  text-align: left;
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateY(25%);  */
 }
 .contact2 .img2 {
   display: none;
   align-self: center;
   /* z-index: 99; */
   height: 8vh;
-  /* transform: translateY(10%);  */
 }
 .contact2:hover .img2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins Medium', sans-serif;
-  font-size: 12px;
-  /* text-align: center; */
   padding-right: 20px;
   text-shadow: 0 0 10px rgba(245,245,245, 1);
 }
@@ -972,7 +917,8 @@ body, html {
   left: 92px;
 }
 
-@media only screen and (max-width: 600px) {
+/* mobile devices */
+@media only screen and (max-width: 480px) {
   .desktop {
     display: none;
   }
@@ -1148,7 +1094,90 @@ body, html {
   }
 }
 
-@media only screen and (min-width: 600px) {
+/* tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .scroll-buttons button{
+    scale: 0.5;
+  }
+
+  #scrollLeft {
+    margin-left: 15px;
+  }
+  
+  #scrollRight {
+    margin-right: 15px;
+  }
+
+  .navigation {
+    font-size: 15px;
+  }
+
+  .aboutstuff {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    margin: auto;
+  }
+
+  .aboutTextContainer {
+    width: 70vw;
+    padding-left: 0vw;
+    /* text-align: justify; */
+    padding-bottom: 10vh;
+  }
+
+  .aboutimage {
+    width: 45vw;
+    aspect-ratio: 1 / 1;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 30px;
+    max-width: 70vw;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+    width: 60vw;
+    height: 50vh;
+    margin: auto;
+    }
+
+  .contact-desktop {
+    display: none;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
+
+  .contacts {
+    font-size: 15px;
+  }
+}
+
+/* desktop and larger */
+@media only screen and (min-width: 769px) {
   
   .desktop {
     display: block;
