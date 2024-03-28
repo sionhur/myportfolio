@@ -36,18 +36,24 @@ prevButton.addEventListener('click', prevSlide);
 
 
   //SCROLLING 
-  function disableScroll() {
-    window.addEventListener('wheel', preventScroll, { passive: false });
-}
-function enableScroll() {
-    window.removeEventListener('wheel', preventScroll, { passive: false });
-}
+//   function disableScroll() {
+//     window.addEventListener('wheel', preventScroll, { passive: false });
+// }
+// function enableScroll() {
+//     window.removeEventListener('wheel', preventScroll, { passive: false });
+// }
 
-function preventScroll(e) {
-    e.preventDefault();
-}
-disableScroll();
+// function preventScroll(e) {
+//     e.preventDefault();
+// }
+// disableScroll();
 
+
+window.addEventListener('wheel', function(e) {
+  e.preventDefault();
+}, { passive: false});
+
+console.log('test');
 
 
 // To disable scrolling

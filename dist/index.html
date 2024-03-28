@@ -180,6 +180,7 @@
         </div>
         </div>
       </div>
+
       <div class="scroll-item" id="item3">
         <div class="gridcenter">
           <div class="parent">
@@ -206,7 +207,7 @@
               </a>
               <a href="/src/design-pages/dole.html" class="div4">
                 <div class="img1">
-                  <img src="/dole-Logo1-word.d9f49c61.png" width="150px" height="100px" style="z-index: 2; position: relative"></div>
+                  <img src="/dole-Logo1-word.d9f49c61.png" width="150px" height="150px" style="z-index: 2; position: relative"></div>
                 <div class="img2">
                   <div style="z-index: 2; width: 150px; position: relative">branding<br>logo design</div>
                 </div>
@@ -235,8 +236,8 @@
           </div>
         </div>
       </div>
+      
       <div class="scroll-item" id="item4">
-
         <div class="contact-desktop">
           <div class="contacts" style="margin-top: 230px">
             <div class="title">email</div>
@@ -298,7 +299,16 @@
     
 
 
-    <script>document.getElementById("scrollLeft").addEventListener("click", function() {
+    <script>window.addEventListener("wheel", function(e) {
+    // Check if the shift key is pressed to allow scrolling when Shift is held down
+    if (!e.shiftKey) // Prevent horizontal scrolling
+    {
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) e.preventDefault();
+    }
+}, {
+    passive: false
+});
+document.getElementById("scrollLeft").addEventListener("click", function() {
     document.querySelector(".scroll-container").scrollBy({
         left: -window.innerWidth,
         behavior: "smooth"
@@ -309,10 +319,9 @@ document.getElementById("scrollRight").addEventListener("click", function() {
         left: window.innerWidth,
         behavior: "smooth"
     });
-});
+}); // console.log('test');
 
-</script>
-    
+</script>    
 
 
 <script src="/myportfolio.3464ddca.js"></script></body>
