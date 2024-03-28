@@ -319,7 +319,27 @@ document.getElementById("scrollRight").addEventListener("click", function() {
         left: window.innerWidth,
         behavior: "smooth"
     });
-}); // console.log('test');
+});
+// console.log('test');
+let touchStartX = 0;
+let touchEndX = 0;
+document.querySelector(".scroll-container").addEventListener("touchstart", function(event) {
+    touchStartX = event.touches[0].clientX;
+});
+document.querySelector(".scroll-container").addEventListener("touchend", function(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+});
+function handleSwipe() {
+    if (touchEndX < touchStartX) document.querySelector(".scroll-container").scrollBy({
+        left: window.innerWidth,
+        behavior: "smooth"
+    });
+    else if (touchEndX > touchStartX) document.querySelector(".scroll-container").scrollBy({
+        left: -window.innerWidth,
+        behavior: "smooth"
+    });
+}
 
 </script>    
 

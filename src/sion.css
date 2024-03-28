@@ -840,7 +840,7 @@ body, html {
 
 .scroll-container {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth; /* Enables smooth scrolling */
   height: 100vh;
 }
@@ -1158,6 +1158,10 @@ body, html {
     display: none;
   }
 
+  .scroll-container {
+    height: 80vh;
+  }
+
   .scroll-buttons button{
     scale: 0.5;
   }
@@ -1213,7 +1217,7 @@ body, html {
     grid-column-gap: 60px;
     grid-row-gap: 40px;
     width: 70vw;
-    height: 50vh;
+    height: 55vh;
     margin: auto;
     }
 
