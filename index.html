@@ -320,25 +320,78 @@
 
       // console.log('test');
 
+      // let touchStartX = 0;
+      //   let touchEndX = 0;
+
+      //   document.querySelector('.scroll-container').addEventListener('touchstart', function(event) {
+      //       touchStartX = event.touches[0].clientX;
+      //   });
+
+      //   document.querySelector('.scroll-container').addEventListener('touchend', function(event) {
+      //       touchEndX = event.changedTouches[0].clientX;
+      //       handleSwipe();
+      //   });
+
+      //   function handleSwipe() {
+      //       if (touchEndX < touchStartX) {
+      //           document.querySelector('.scroll-container').scrollBy({ left: window.innerWidth, behavior: 'smooth' });
+      //       } else if (touchEndX > touchStartX) {
+      //           document.querySelector('.scroll-container').scrollBy({ left: -window.innerWidth, behavior: 'smooth' });
+      //       }
+      //   }
+
       let touchStartX = 0;
-        let touchEndX = 0;
+      let touchEndX = 0;
 
-        document.querySelector('.scroll-container').addEventListener('touchstart', function(event) {
-            touchStartX = event.touches[0].clientX;
-        });
+      document.querySelector('.scroll-container').addEventListener('touchstart', function(event) {
+          touchStartX = event.touches[0].clientX;
+      });
 
-        document.querySelector('.scroll-container').addEventListener('touchend', function(event) {
-            touchEndX = event.changedTouches[0].clientX;
-            handleSwipe();
-        });
+      document.querySelector('.scroll-container').addEventListener('touchend', function(event) {
+          touchEndX = event.changedTouches[0].clientX;
+          handleSwipe();
+      });
 
-        function handleSwipe() {
-            if (touchEndX < touchStartX) {
-                document.querySelector('.scroll-container').scrollBy({ left: window.innerWidth, behavior: 'smooth' });
-            } else if (touchEndX > touchStartX) {
-                document.querySelector('.scroll-container').scrollBy({ left: -window.innerWidth, behavior: 'smooth' });
-            }
-        }
+      function handleSwipe() {
+          // Set a threshold to consider as a swipe
+          const swipeThreshold = 20; // Adjust this value as needed
+
+          // Calculate the difference between start and end touch positions
+          const deltaX = touchEndX - touchStartX;
+
+          // Check if the difference exceeds the threshold
+          if (Math.abs(deltaX) >= swipeThreshold) {
+              if (touchEndX < touchStartX) {
+                  scrollToNextItem();
+              } else if (touchEndX > touchStartX) {
+                  scrollToPreviousItem();
+              }
+          }
+      }
+
+      function scrollToNextItem() {
+        const scrollContainer = document.querySelector('.scroll-container');
+        const scrollLeft = scrollContainer.scrollLeft;
+        const itemWidth = window.innerWidth;
+
+        // Calculate the index of the next scroll item
+        const nextIndex = Math.ceil((scrollLeft + itemWidth * 0.5) / itemWidth);
+
+        // Scroll to the next item
+        scrollContainer.scrollTo({ left: nextIndex * itemWidth, behavior: 'smooth' });
+    }
+
+    function scrollToPreviousItem() {
+        const scrollContainer = document.querySelector('.scroll-container');
+        const scrollLeft = scrollContainer.scrollLeft;
+        const itemWidth = window.innerWidth;
+
+        // Calculate the index of the previous scroll item
+        const prevIndex = Math.max(Math.floor((scrollLeft - itemWidth * 0.5) / itemWidth), 0);
+
+        // Scroll to the previous item
+        scrollContainer.scrollTo({ left: prevIndex * itemWidth, behavior: 'smooth' });
+    }
 
     </script>    
 
